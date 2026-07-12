@@ -281,14 +281,17 @@
   /* ローディング画面（ロゴが手を振る） */
   #loader{position:fixed;inset:0;z-index:9999;background:var(--kinari);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;transition:opacity .5s ease}
   #loader.hide{opacity:0;pointer-events:none}
-  .loader-logo{width:min(230px,58vw);height:auto;transform-origin:60% 82%;animation:lwave 1.5s ease-in-out infinite}
-  @keyframes lwave{0%,62%,100%{transform:rotate(0)}8%{transform:rotate(14deg)}18%{transform:rotate(-8deg)}28%{transform:rotate(14deg)}38%{transform:rotate(-6deg)}50%{transform:rotate(11deg)}}
+  .ll-wrap{position:relative;width:min(230px,58vw);aspect-ratio:387/200}
+  .ll-base{width:100%;height:100%;display:block}
+  .ll-cover{position:absolute;left:72.5%;top:2%;width:28%;height:58%;background:var(--kinari)}
+  .ll-hand{position:absolute;left:73.1%;top:25%;width:15.5%;height:auto;transform-origin:42% 92%;animation:hwave 1s ease-in-out infinite}
+  @keyframes hwave{0%,100%{transform:rotate(-6deg)}25%{transform:rotate(17deg)}50%{transform:rotate(2deg)}75%{transform:rotate(17deg)}}
   .loader-dots{display:flex;gap:8px}
   .loader-dots span{width:9px;height:9px;border-radius:50%;background:var(--blue);animation:ldot 1s ease-in-out infinite}
   .loader-dots span:nth-child(2){animation-delay:.16s}
   .loader-dots span:nth-child(3){animation-delay:.32s}
   @keyframes ldot{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-5px)}}
-  @media(prefers-reduced-motion:reduce){.loader-logo,.loader-dots span{animation:none}}
+  @media(prefers-reduced-motion:reduce){.ll-hand,.loader-dots span{animation:none}}
 </style>
 
 <meta name="keywords" content="原付レンタル,原付 レンタル,原付バイク レンタル,バイクレンタル 池袋,原付 月額,原付 乗り放題,Uber Eats バイク,ウーバーイーツ 原付,出前館 バイク,デリバリー 原付,配達員 バイク レンタル,副業 ライダー 原付,50cc レンタル,東京 原付 レンタル,豊島区 バイクレンタル,原付 通勤">
@@ -321,7 +324,11 @@
 </nav>
 
 <div id="loader" aria-hidden="true">
-  <img class="loader-logo" src="assets/logo.png" alt="" width="230" height="119">
+  <div class="ll-wrap">
+    <img class="ll-base" src="assets/logo.png" alt="" width="230" height="119">
+    <div class="ll-cover"></div>
+    <img class="ll-hand" src="assets/hand.png" alt="">
+  </div>
   <div class="loader-dots"><span></span><span></span><span></span></div>
 </div>
 <script>
