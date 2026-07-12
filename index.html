@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原付レンタルなら50ccステーション｜月額2万円・乗り放題｜池袋・東京</title>
+<meta name="description" content="【原付レンタル/月額20,000円で乗り放題】消耗品の修理は自社持ち込みで無料、365日最短当日に車両交換、レンタル当日の支払い不要。Uber Eats・出前館などの配達員、副業ライダー、通勤・通学まで対応。池袋発・関東圏対応。">
+<meta property="og:title" content="50ccステーション｜配達を止めない原付レンタル">
+<meta property="og:description" content="故障しても最短当日に車両交換。消耗品の修理0円・走行距離保証つき。月額20,000円で距離無制限の原付レンタル。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/hero-desktop.jpg">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-desktop.jpg" media="(min-width:641px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero-mobile.jpg" media="(max-width:640px)" fetchpriority="high">
+<style>
+  :root{
+    --ink:#1A1A1A;
+    --ink-soft:#57534E;
+    --blue:#054DB4;
+    --blue-dark:#0A2E63;
+    --red:#E81C19;
+    --line:#06C755;
+    --kinari:#FFFDFA;
+    --card:#FFFFFF;
+    --hair:#E7E3DA;
+    --tint:#EEF3FA;
+    --tint2:#E4ECF7;
+    --sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","IBM Plex Sans JP","Noto Sans JP",system-ui,sans-serif;
+    --shadow:0 10px 30px rgba(20,40,90,.08);
+    --shadow-sm:0 4px 14px rgba(20,40,90,.06);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:76px}
+  body{font-family:var(--sans);color:var(--ink);background:var(--kinari);-webkit-font-smoothing:antialiased;line-height:1.75;font-weight:400;word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+  .section{padding:clamp(56px,8vw,104px) 0}
+  .eyebrow{display:inline-flex;align-items:center;gap:12px;color:var(--blue);font-weight:600;font-size:.8rem;letter-spacing:.2em;margin-bottom:18px}
+  .eyebrow::before{content:"";width:24px;height:1px;background:var(--blue);display:inline-block}
+  .sec-head{max-width:720px;margin-bottom:clamp(32px,5vw,56px)}
+  .sec-head h2{font-size:clamp(1.7rem,4.2vw,2.6rem);font-weight:700;line-height:1.25;letter-spacing:.01em}
+  .sec-head p{margin-top:14px;color:var(--ink-soft);font-size:1.02rem;line-height:1.9}
+  .em-b{color:var(--blue)} .em-r{color:var(--red)}
+
+  /* ---------- ナビ ---------- */
+  .nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:12px clamp(20px,5vw,48px);background:rgba(255,253,250,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--hair)}
+  .nav__logo{height:38px;width:auto}
+  .nav__links{display:flex;align-items:center;gap:26px}
+  .nav__links a{text-decoration:none;font-size:.9rem;font-weight:500;letter-spacing:.02em;opacity:.85}
+  .nav__links a:hover{opacity:1;color:var(--blue)}
+  .nav__cta{display:inline-flex;align-items:center;gap:7px;background:var(--line);color:#fff;font-weight:600;font-size:.86rem;padding:9px 17px;border-radius:999px;text-decoration:none;box-shadow:0 6px 18px rgba(6,199,85,.28)}
+  .nav__cta:hover{filter:brightness(1.04)}
+  @media(max-width:860px){.nav__links a:not(.nav__cta){display:none}}
+
+  /* ---------- ヒーロー ---------- */
+  .hero{position:relative;min-height:calc(100svh - 62px);overflow:hidden;display:flex;align-items:center}
+  .hero__photo{position:absolute;inset:0;z-index:0;background:#EAF3F7 url("assets/hero-desktop.jpg") center right/cover no-repeat}
+  .hero__scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(95deg, rgba(255,253,250,.9) 0%, rgba(255,253,250,.62) 28%, rgba(255,253,250,.15) 52%, rgba(255,253,250,0) 72%)}
+  .hero__content{position:relative;z-index:3;width:100%;max-width:1120px;margin:0 auto;padding:80px clamp(20px,5vw,48px) 120px}
+  .stack{max-width:680px}
+  .hero h1{font-weight:700;font-size:clamp(2rem,5.2vw,3.9rem);line-height:1.2;letter-spacing:.005em;text-wrap:balance}
+  .hero .sub{color:var(--ink-soft);font-size:clamp(1rem,1.7vw,1.2rem);margin-top:clamp(28px,4vw,44px);max-width:30em;line-height:1.85;text-shadow:0 1px 10px rgba(255,255,255,.6)}
+  .cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:24px;margin-top:26px}
+  .btn-line{display:inline-flex;align-items:center;gap:10px;background:var(--line);color:#fff;text-decoration:none;font-weight:600;font-size:1.05rem;padding:15px 30px;border-radius:12px;box-shadow:0 6px 18px rgba(6,199,85,.24);transition:filter .15s}
+  .btn-line svg{width:20px;height:20px}
+  .btn-line:hover{filter:brightness(1.05)}
+  .cta-link{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:600;font-size:1rem;transition:color .15s}
+  .cta-link svg{width:16px;height:16px;transition:transform .15s}
+  .cta-link:hover{color:var(--blue)}
+  .cta-link:hover svg{transform:translateX(3px)}
+  .btn-plan{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--blue);color:#fff;text-decoration:none;font-weight:600;font-size:.98rem;padding:14px 26px;border-radius:12px;box-shadow:0 6px 18px rgba(5,77,180,.24);transition:filter .15s;line-height:1.3;text-align:center}
+  .btn-plan svg{width:16px;height:16px;flex:0 0 auto}
+  .btn-plan:hover{filter:brightness(1.06)}
+  .cta-note{margin-top:15px;color:var(--ink-soft);font-size:.82rem;font-weight:500;text-shadow:0 1px 10px rgba(255,255,255,.9)}
+  .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:clamp(28px,4vw,42px)}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;padding:8px 15px 8px 13px;border-radius:999px;font-size:.85rem;font-weight:600;box-shadow:0 4px 14px rgba(5,77,180,.2)}
+  .badge svg{width:18px;height:18px;flex:0 0 auto}
+  .micro{margin-top:18px;color:var(--ink);font-size:.85rem;font-weight:500;text-shadow:0 1px 10px rgba(255,255,255,.95)}
+  .micro b{font-weight:700}
+
+  /* ---------- タグラインバンド ---------- */
+  .tagband{background:var(--blue-dark);color:#fff;text-align:center;padding:26px 20px}
+  .tagband p{font-size:clamp(1.15rem,3vw,1.8rem);font-weight:700;letter-spacing:.06em}
+  .tagband .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin:0 12px;vertical-align:middle}
+  .tagband .d-b{background:#7FB0FF}.tagband .d-r{background:var(--red)}
+  .tagband .t-b{color:#7FB0FF}.tagband .t-r{color:#FF5757}
+  .tagband .tp,.foot-tag .tp{display:inline}
+
+  /* ---------- プラン ---------- */
+  .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .plan{position:relative;background:var(--card);border:1px solid var(--hair);border-radius:18px;padding:26px 22px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
+  .plan.is-pop{border:2px solid var(--blue);box-shadow:var(--shadow)}
+  .plan__pop{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--red);color:#fff;font-size:.75rem;font-weight:700;padding:4px 14px;border-radius:999px;white-space:nowrap}
+  .plan__use{display:inline-block;font-size:.74rem;font-weight:600;color:var(--blue);background:var(--tint);padding:4px 10px;border-radius:999px;margin-bottom:12px}
+  .plan__name{font-size:1.15rem;font-weight:700}
+  .plan__price{display:flex;align-items:baseline;gap:4px;margin:8px 0 4px}
+  .plan__price b{font-size:2.2rem;font-weight:700;letter-spacing:-.01em}
+  .plan__price span{font-size:.9rem;color:var(--ink-soft)}
+  .plan__desc{font-size:.86rem;color:var(--ink-soft);line-height:1.7;margin-bottom:14px;min-height:2.6em}
+  .plan__btn{margin-top:auto;display:block;text-align:center;text-decoration:none;font-weight:600;font-size:.92rem;padding:12px;border-radius:10px;border:1.5px solid var(--blue);color:var(--blue);transition:.15s}
+  .plan.is-pop .plan__btn{background:var(--blue);color:#fff}
+  .plan__btn:hover{background:var(--blue);color:#fff}
+  .plan-note{margin-top:18px;font-size:.82rem;color:var(--ink-soft);line-height:1.8}
+  .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:26px}
+  .opt{background:var(--tint);border-radius:14px;padding:18px 20px;text-align:center}
+  .opt h3{font-size:1rem;font-weight:700;margin-bottom:4px}
+  .opt .price{font-size:1.3rem;font-weight:700;color:var(--blue)}
+  .opt .price small{font-size:.8rem;color:var(--ink-soft);font-weight:500}
+
+  /* ---------- 強み・保証 ---------- */
+  .strengths{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  .strength{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:24px;box-shadow:var(--shadow-sm)}
+  .strength .ic{width:46px;height:46px;border-radius:12px;background:var(--tint);color:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .strength .ic svg{width:24px;height:24px}
+  .strength h3{font-size:1.08rem;font-weight:700;line-height:1.4;margin-bottom:8px}
+  .strength p{font-size:.88rem;color:var(--ink-soft);line-height:1.75}
+  .subblock{margin-top:44px}
+  .subblock h3{font-size:1.3rem;font-weight:700;margin-bottom:6px}
+  .subblock .lead{color:var(--ink-soft);font-size:.95rem;margin-bottom:18px}
+  .card{background:var(--card);border:1px solid var(--hair);border-radius:16px;box-shadow:var(--shadow-sm)}
+  table.warranty{width:100%;border-collapse:collapse;overflow:hidden;border-radius:14px}
+  table.warranty th,table.warranty td{text-align:left;padding:13px 16px;font-size:.9rem;border-bottom:1px solid var(--hair)}
+  table.warranty thead th{background:var(--tint2);font-weight:700;color:var(--blue-dark)}
+  table.warranty tr:last-child td{border-bottom:none}
+  table.warranty td:first-child{font-weight:600;white-space:nowrap}
+  .warranty-note{font-size:.78rem;color:var(--ink-soft);margin-top:10px}
+  .reset-card{padding:22px 24px;display:flex;gap:16px;align-items:flex-start;margin-top:16px}
+  .reset-card .ic{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:var(--tint);color:var(--blue);display:flex;align-items:center;justify-content:center}
+  .reset-card h4{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+  .reset-card p{font-size:.9rem;color:var(--ink-soft)}
+  .ins-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .ins{position:relative;background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:24px;box-shadow:var(--shadow-sm)}
+  .ins.is-rec{border:2px solid var(--blue)}
+  .ins__rec{position:absolute;top:-13px;right:20px;background:var(--blue);color:#fff;font-size:.74rem;font-weight:700;padding:4px 12px;border-radius:999px}
+  .ins h4{font-size:1.2rem;font-weight:700}
+  .ins .plan-sub{font-size:.8rem;color:var(--ink-soft);font-weight:600;margin-bottom:12px}
+  .ins .price{font-size:1.6rem;font-weight:700;color:var(--blue);margin-bottom:14px}
+  .ins .price small{font-size:.85rem;color:var(--ink);font-weight:600}
+  .ins ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+  .ins li{font-size:.88rem;line-height:1.6;padding-left:24px;position:relative;color:var(--ink)}
+  .ins li::before{content:"";position:absolute;left:0;top:.5em;width:14px;height:14px;border-radius:50%;background:var(--tint);border:2px solid var(--blue)}
+  .ins li.no::before{border-color:#C9C6BE;background:transparent}
+  .ins li.no{color:var(--ink-soft)}
+  .ins .fine{font-size:.73rem;color:var(--ink-soft);line-height:1.7;margin-top:14px}
+  .liability{background:#F6F4EE;border:1px solid var(--hair);border-radius:14px;padding:18px 20px;margin-top:16px}
+  .liability b{display:block;font-size:.85rem;color:var(--ink);margin-bottom:8px}
+  .liability p,.liability li{font-size:.77rem;color:var(--ink-soft);line-height:1.7}
+  .liability ul{margin:4px 0 4px 18px}
+
+  /* ---------- 流れ ---------- */
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;counter-reset:step}
+  .step{position:relative;background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:28px 24px;box-shadow:var(--shadow-sm)}
+  .step__no{counter-increment:step;width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:1.2rem;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .step__no::before{content:counter(step)}
+  .step h3{font-size:1.08rem;font-weight:700;margin-bottom:8px}
+  .step p{font-size:.88rem;color:var(--ink-soft);line-height:1.75}
+  .steps-note{margin-top:16px;font-size:.85rem;color:var(--ink-soft)}
+
+  /* ---------- 運営者 ---------- */
+  .about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+  @media(max-width:820px){.about-grid{grid-template-columns:1fr;gap:28px}}
+  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:24px 0}
+  .stat{background:var(--tint);border-radius:14px;padding:18px}
+  .stat .lbl{font-size:.78rem;color:var(--ink-soft)}
+  .stat .val{font-size:1.5rem;font-weight:700;color:var(--blue-dark)}
+  .company{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  @media(max-width:560px){.company,.stats{grid-template-columns:1fr}}
+  .company .row{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:14px 16px}
+  .company .row .lbl{font-size:.75rem;color:var(--ink-soft)}
+  .company .row .val{font-weight:600;font-size:.95rem}
+  .about-photo{background:var(--tint);border-radius:20px;padding:14px;box-shadow:var(--shadow)}
+  .about-photo img{border-radius:12px;width:100%;aspect-ratio:4/3;object-fit:cover}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+  .faq{background:var(--card);border:1px solid var(--hair);border-radius:14px;overflow:hidden}
+  .faq summary{list-style:none;cursor:pointer;padding:18px 20px;font-weight:600;font-size:.98rem;display:flex;gap:12px;align-items:flex-start;position:relative}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary .q{color:var(--blue);font-weight:700;flex:0 0 auto}
+  .faq summary .mk{margin-left:auto;flex:0 0 auto;width:20px;height:20px;position:relative;transition:transform .2s}
+  .faq summary .mk::before,.faq summary .mk::after{content:"";position:absolute;background:var(--blue);border-radius:2px}
+  .faq summary .mk::before{top:9px;left:2px;width:16px;height:2px}
+  .faq summary .mk::after{top:2px;left:9px;width:2px;height:16px;transition:transform .2s}
+  .faq[open] summary .mk::after{transform:rotate(90deg);opacity:0}
+  .faq__body{padding:0 20px 18px;color:var(--ink-soft);font-size:.9rem;line-height:1.85;border-top:1px solid var(--hair);padding-top:14px;margin-top:-2px}
+  .locations{max-width:960px;margin:48px auto 0}
+  .loc-basic{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:22px;box-shadow:var(--shadow-sm);margin-bottom:20px}
+  .loc-basic h3{font-size:1.1rem;font-weight:700;margin-bottom:6px}
+  .loc-basic .addr{color:var(--ink-soft);font-size:.9rem;margin-bottom:14px}
+  .loc-basic iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:12px}
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:760px){.loc-grid{grid-template-columns:1fr}}
+  .loc-fees{display:flex;flex-direction:column;gap:10px}
+  .fee{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:14px 18px}
+  .fee .place{font-weight:600;font-size:.95rem}
+  .fee .place small{display:block;font-weight:400;color:var(--ink-soft);font-size:.76rem}
+  .fee .add{color:var(--blue);font-weight:700;white-space:nowrap}
+  .fee-note{font-size:.76rem;color:var(--ink-soft);line-height:1.7;margin-top:4px}
+  .contact-card{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:22px;box-shadow:var(--shadow-sm)}
+  .contact-card h3{font-size:1.1rem;font-weight:700;margin-bottom:14px}
+  .contact-card .line{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--hair);font-size:.92rem}
+  .contact-card .line:last-child{border-bottom:none}
+  .contact-card .line svg{width:20px;height:20px;color:var(--blue);flex:0 0 auto}
+  .contact-card a{text-decoration:none}
+  .contact-card a:hover{color:var(--blue)}
+
+  /* ---------- 最終CTA ---------- */
+  .final{background:var(--blue-dark);color:#fff;text-align:center}
+  .final h2{font-size:clamp(1.7rem,4.5vw,2.8rem);font-weight:700;line-height:1.3}
+  .final p{margin-top:14px;color:#C7D6EC;font-size:1rem}
+  .final .btn-line{margin-top:26px;font-size:1.1rem;padding:16px 36px}
+
+  /* ---------- フッター ---------- */
+  footer{background:#0A1220;color:#C7D0DC;padding:48px 0 32px}
+  .foot-tag{text-align:center;font-size:clamp(1.1rem,2.6vw,1.5rem);font-weight:700;letter-spacing:.05em;color:#fff;margin-bottom:28px}
+  .foot-tag .t-b{color:#7FB0FF}.foot-tag .t-r{color:#FF5757}
+  .foot-tag .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin:0 10px;vertical-align:middle}
+  .foot-tag .d-b{background:#7FB0FF}.foot-tag .d-r{background:#FF5757}
+  .foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;border-top:1px solid rgba(255,255,255,.12);padding-top:28px}
+  .foot-grid .col h3{color:#fff;font-size:.9rem;margin-bottom:10px;font-weight:600}
+  .foot-grid .col a{display:block;color:#9AA7B6;text-decoration:none;font-size:.85rem;padding:3px 0}
+  .foot-grid .col a:hover{color:#fff}
+  .foot-grid .col p{font-size:.82rem;color:#9AA7B6;line-height:1.8}
+  .copy{text-align:center;font-size:.78rem;color:#6B7685;margin-top:28px}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+  @media(max-width:640px){
+    .hero__photo{background-image:url("assets/hero-mobile.jpg");background-position:72% center}
+    .hero__scrim{background:linear-gradient(180deg, rgba(255,253,250,.95) 0%, rgba(255,253,250,.74) 44%, rgba(255,253,250,.42) 68%, rgba(255,253,250,.06) 100%)}
+    .hero__content{padding:44px 20px 40px}
+    .hero-points{max-width:100%}
+    .cta-note,.hero-other,.micro{display:none}
+    .btn-line,.btn-plan{width:100%;justify-content:center}
+    .cta-row{gap:16px}
+    /* タグライン: スマホは縦3つ */
+    .tagband .tp{display:block}.tagband .dot{display:none}
+    .tagband p{line-height:1.9}
+    .foot-tag .tp{display:block}.foot-tag .dot{display:none}
+    .foot-tag{line-height:1.9}
+  }
+
+  /* 強調 */
+  .hl{font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:2px;text-underline-offset:3px}
+  .hlw{font-weight:700;text-decoration:underline;text-decoration-color:rgba(255,255,255,.7);text-decoration-thickness:2px;text-underline-offset:3px}
+  /* 無制限フィーチャーカード */
+  .plan-hero{position:relative;background:var(--blue);color:#fff;border-radius:20px;padding:clamp(24px,4vw,36px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;box-shadow:var(--shadow)}
+  .plan-hero__left{display:flex;flex-direction:column;gap:6px}
+  .plan-hero__badges{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .ph-pop{background:var(--red);color:#fff;font-size:.75rem;font-weight:700;padding:4px 12px;border-radius:999px}
+  .ph-use{font-size:.88rem;opacity:.92}
+  .plan-hero__name{font-size:1.6rem;font-weight:700}
+  .plan-hero__price{display:flex;align-items:baseline;gap:6px}
+  .plan-hero__price b{font-size:clamp(2.6rem,6vw,3.2rem);font-weight:700;line-height:1;letter-spacing:-.01em}
+  .plan-hero__price span{font-size:1rem;opacity:.92}
+  .plan-hero__right{display:flex;flex-direction:column;gap:14px;max-width:440px}
+  .plan-hero__desc{font-size:.98rem;line-height:1.75;color:#fff}
+  .plan-hero__btn{align-self:flex-start;background:#fff;color:var(--blue);font-weight:700;font-size:1rem;padding:13px 30px;border-radius:12px;text-decoration:none;transition:.15s}
+  .plan-hero__btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(0,0,0,.18)}
+  .plans-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:18px}
+  @media(max-width:640px){.plan-hero{flex-direction:column;align-items:flex-start}.plan-hero__right{max-width:100%}.plan-hero__btn{align-self:stretch;text-align:center}}
+  /* 運営者アニメ枠 */
+  .about-anim{background:var(--tint);border-radius:20px;padding:14px;box-shadow:var(--shadow)}
+  .about-anim > div{width:100%;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center}
+  .about-anim svg{max-width:100%;max-height:100%}
+
+  /* ヒーロー: 強み箇条書き */
+  .hero-points{list-style:none;display:flex;flex-direction:column;gap:11px;margin:clamp(22px,3.5vw,32px) 0 0;max-width:33em}
+  .hero-points li{position:relative;padding-left:32px;font-size:clamp(.98rem,1.5vw,1.15rem);line-height:1.55;color:var(--ink);text-shadow:0 1px 10px rgba(255,255,255,.75)}
+  .hero-points li b{font-weight:700}
+  .hero-points li::before{content:"✓";position:absolute;left:0;top:.1em;width:21px;height:21px;line-height:21px;text-align:center;border-radius:50%;background:var(--blue);color:#fff;font-size:12px;font-weight:700;text-shadow:none}
+  .hero-close{margin-top:18px;font-size:clamp(1.02rem,1.6vw,1.2rem);font-weight:700;color:var(--blue-dark);text-shadow:0 1px 10px rgba(255,255,255,.8)}
+  .hero-other{margin-top:14px;font-size:.85rem;color:var(--ink-soft);font-weight:500;text-shadow:0 1px 10px rgba(255,255,255,.9)}
+
+  /* ローディング画面（ロゴが手を振る） */
+  #loader{position:fixed;inset:0;z-index:9999;background:var(--kinari);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;transition:opacity .5s ease}
+  #loader.hide{opacity:0;pointer-events:none}
+  .loader-logo{width:min(230px,58vw);height:auto;transform-origin:60% 82%;animation:lwave 1.5s ease-in-out infinite}
+  @keyframes lwave{0%,62%,100%{transform:rotate(0)}8%{transform:rotate(14deg)}18%{transform:rotate(-8deg)}28%{transform:rotate(14deg)}38%{transform:rotate(-6deg)}50%{transform:rotate(11deg)}}
+  .loader-dots{display:flex;gap:8px}
+  .loader-dots span{width:9px;height:9px;border-radius:50%;background:var(--blue);animation:ldot 1s ease-in-out infinite}
+  .loader-dots span:nth-child(2){animation-delay:.16s}
+  .loader-dots span:nth-child(3){animation-delay:.32s}
+  @keyframes ldot{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-5px)}}
+  @media(prefers-reduced-motion:reduce){.loader-logo,.loader-dots span{animation:none}}
+</style>
+
+<meta name="keywords" content="原付レンタル,原付 レンタル,原付バイク レンタル,バイクレンタル 池袋,原付 月額,原付 乗り放題,Uber Eats バイク,ウーバーイーツ 原付,出前館 バイク,デリバリー 原付,配達員 バイク レンタル,副業 ライダー 原付,50cc レンタル,東京 原付 レンタル,豊島区 バイクレンタル,原付 通勤">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://www.50cc-station.org/">
+<meta property="og:site_name" content="50ccステーション">
+<meta property="og:url" content="https://www.50cc-station.org/">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="原付レンタルなら50ccステーション｜月額2万円・乗り放題">
+<meta name="twitter:description" content="月額20,000円で走行距離無制限。消耗品の修理は自社持ち込みで無料、365日最短当日に車両交換。Uber Eats・出前館の配達員、副業、通勤通学まで対応。">
+<meta name="twitter:image" content="assets/hero-desktop.jpg">
+<meta name="geo.region" content="JP-13"><meta name="geo.placename" content="東京都豊島区"><meta name="geo.position" content="35.7294032;139.6859338"><meta name="ICBM" content="35.7294032, 139.6859338">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "株式会社ゼロワン", "alternateName": "50ccステーション", "url": "https://www.50cc-station.org", "logo": "https://www.50cc-station.org/logo.png", "description": "50ccステーションは、配送員に寄り添う原付バイクのレンタルサービスです。月額20,000円で乗り放題、消耗品の修理は自社持ち込みで無料、365日最短当日に車両交換。", "address": {"@type": "PostalAddress", "streetAddress": "向原2-19-2", "addressLocality": "板橋区", "addressRegion": "東京都", "postalCode": "173-0036", "addressCountry": "JP"}, "telephone": "+81-50-1793-3872", "foundingDate": "2025-01-01", "founder": {"@type": "Person", "name": "千葉 拓"}, "priceRange": "¥2,500-¥20,000", "sameAs": ["https://line.me/R/ti/p/@273smptm"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "AutomotiveBusiness", "@id": "https://www.50cc-station.org/#localbusiness", "name": "50ccステーション", "image": "https://www.50cc-station.org/og-image.jpg", "url": "https://www.50cc-station.org", "telephone": "+81-50-1793-3872", "priceRange": "¥2,500-¥20,000", "currenciesAccepted": "JPY", "paymentAccepted": "Credit Card, PayPay, Bank Transfer", "address": {"@type": "PostalAddress", "streetAddress": "向原2-19-2", "addressLocality": "板橋区", "addressRegion": "東京都", "postalCode": "173-0036", "addressCountry": "JP"}, "geo": {"@type": "GeoCoordinates", "latitude": 35.7472, "longitude": 139.6969}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "00:00", "closes": "23:59"}], "areaServed": [{"@type": "City", "name": "板橋区"}, {"@type": "City", "name": "新宿区"}, {"@type": "City", "name": "池袋"}, {"@type": "AdministrativeArea", "name": "東京都"}, {"@type": "AdministrativeArea", "name": "関東圏"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "原付バイクレンタル", "serviceType": "バイクレンタル / バイクシェアリング", "provider": {"@id": "https://www.50cc-station.org/#localbusiness"}, "areaServed": {"@type": "AdministrativeArea", "name": "関東圏"}, "description": "月額20,000円で走行距離無制限。消耗品の修理は自社持ち込みで無料、365日最短当日に車両交換。", "offers": [{"@type": "Offer", "name": "日割りプラン", "price": "2500", "priceCurrency": "JPY", "description": "急な短距離移動向け。距離制限なし（1日あたり）", "availability": "https://schema.org/InStock"}, {"@type": "Offer", "name": "ライトプラン", "price": "11000", "priceCurrency": "JPY", "description": "月額。走行距離300kmまで（超過1km=10円）", "availability": "https://schema.org/InStock"}, {"@type": "Offer", "name": "スタンダードプラン", "price": "16000", "priceCurrency": "JPY", "description": "月額。走行距離1,000kmまで（超過1km=10円）", "availability": "https://schema.org/InStock"}, {"@type": "Offer", "name": "無制限プラン", "price": "20000", "priceCurrency": "JPY", "description": "月額。走行距離無制限・乗り放題", "availability": "https://schema.org/InStock"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "バイクの車種は指定できますか？", "acceptedAnswer": {"@type": "Answer", "text": "車種のご指定はお断りさせていただいております。在庫車両からのお渡しとなりますが、同等性能の車両をご用意しますのでご安心ください。"}}, {"@type": "Question", "name": "デリバリーボックスの大きさは？", "acceptedAnswer": {"@type": "Answer", "text": "42L型のものを使用しています。よくあるフードデリバリーバッグと同等の大きさで、バッグと違い肩が凝らないので長時間デリバリーの方におすすめです。"}}, {"@type": "Question", "name": "取り扱い車種は？", "acceptedAnswer": {"@type": "Answer", "text": "２輪のスクータータイプを取り扱っています。ホンダ ディオ、ヤマハ ジョグ、スズキ レッツ４などを取り揃えております。"}}, {"@type": "Question", "name": "125ccの取り扱いはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "現在、125ccのお取り扱いはしておりません。"}}, {"@type": "Question", "name": "お支払い日時はいつ・どんな方法？", "acceptedAnswer": {"@type": "Answer", "text": "毎月10日固定で、クレジットカード・PayPay・銀行振込からお選びいただけます。　・利用開始が10日より前 → 当月10日にお支払い　・利用開始が10日以降 → 翌月10日にお支払い　レンタル開始当日のお支払いは不要です。"}}, {"@type": "Question", "name": "Uber Eats や出前館など配達業務でも使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、配送員業務を行う方のご利用が一番多いです。毎日走る方には「無制限プラン」、土日だけの副業ライダーには「ライト」や「スタンダードプラン」をおすすめしています。"}}, {"@type": "Question", "name": "途中で延長したい場合は？", "acceptedAnswer": {"@type": "Answer", "text": "基本自動更新ですので、延長できなくなることはございません。返却日時が決まり次第、返却予定日の2日前までにご一報ください。"}}, {"@type": "Question", "name": "プラン変更はできますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、毎月10日から25日までの間にLINEでご連絡いただければプラン変更が可能です。利用状況に応じて最適なプランへの切り替えをご相談ください。"}}, {"@type": "Question", "name": "デリバリー車両登録に必要な書類は事前にもらえますか？", "acceptedAnswer": {"@type": "Answer", "text": "受け渡し当日まで車両は確定しないため、車両情報（ナンバー等）が必要な書類は受け渡し後のお渡しとなります。あらかじめご了承ください。"}}, {"@type": "Question", "name": "利用に必要な免許は？年齢制限は？", "acceptedAnswer": {"@type": "Answer", "text": "原動機付自転車を運転できる有効な日本国の運転免許証（普通自動車免許でも可）が必要です。ご利用は満18歳以上が対象です。"}}, {"@type": "Question", "name": "当日にすぐ借りられますか？", "acceptedAnswer": {"@type": "Answer", "text": "免許証の確認と電子契約書の手続き完了後、最短でご利用開始いただけます。在庫状況により当日対応できない場合もありますので、お急ぎの方は事前にLINEでご相談ください。"}}, {"@type": "Question", "name": "受け渡しはどんな方法ですか？", "acceptedAnswer": {"@type": "Answer", "text": "基本は無人受け渡し（キーBOX方式）で24時間対応しています。原付に初めて乗る方や運転に自信がない方は、事前にご連絡いただければ有人での対応も可能です。"}}, {"@type": "Question", "name": "屋根付きミニカー登録車両はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "申し訳ございません、屋根付きミニカー登録車両のお取り扱いはございません。"}}, {"@type": "Question", "name": "自分で保険に加入することは可能ですか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、ご自身でお好きな任意保険にご加入いただくことも可能です。当社の任意保険オプション（ベーシック1,100円/月、パーフェクト補償2,200円/月）と併用または選択いただけます。"}}, {"@type": "Question", "name": "「任意保険オプション」と「パーフェクト補償」の違いは何ですか？", "acceptedAnswer": {"@type": "Answer", "text": "両プランとも、当社が保険会社と契約しているフリート任意保険（対人・対物無制限／免責額20万円）が適用されます。パーフェクト補償は、これに加えて当社独自の追加補償（免責20万円のうち15万円を当社が補償し、実質のお客様負担は5万円／GPS情報を共有し被害届が受理された場合は盗難費用の負担なし／多少の傷・ミラー破損などの修理費の請求なし）が付いた上位プランです。"}}]}</script>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#top" aria-label="50ccステーション トップへ"><img class="nav__logo" src="assets/logo.png" alt="50ccステーション 原付レンタル" width="74" height="38"></a>
+  <div class="nav__links">
+    <a href="#plan">料金プラン</a>
+    <a href="#strengths">強み・保証</a>
+    <a href="#flow">利用の流れ</a>
+    <a href="#faq">よくある質問</a>
+    <a class="nav__cta" href="https://line.me/R/ti/p/@273smptm" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 3C6.9 3 3 6.3 3 10.3c0 3.6 3.2 6.6 7.5 7.2.3 0 .7.2.8.4.1.2.1.5 0 .7l-.2 1c-.1.4.3.9.8.6 1.9-.9 6.1-3.6 7.8-6.1 1-1.2 1.5-2.5 1.5-3.8C21 6.3 17.1 3 12 3Z"/></svg>LINEで予約</a>
+  </div>
+</nav>
+
+<div id="loader" aria-hidden="true">
+  <img class="loader-logo" src="assets/logo.png" alt="" width="230" height="119">
+  <div class="loader-dots"><span></span><span></span><span></span></div>
+</div>
+<script>
+(function(){
+  var ld=document.getElementById('loader'); if(!ld) return;
+  var start=Date.now(), MIN=1100;
+  function hide(){ var wait=Math.max(0,MIN-(Date.now()-start)); setTimeout(function(){ ld.classList.add('hide'); setTimeout(function(){ if(ld&&ld.parentNode) ld.parentNode.removeChild(ld); },600); }, wait); }
+  if(document.readyState==='complete') hide(); else window.addEventListener('load',hide);
+})();
+</script>
+
+<main>
+<header class="hero" id="top">
+  <div class="hero__photo"></div>
+  <div class="hero__scrim"></div>
+  <div class="hero__content">
+    <div class="stack">
+      <span class="eyebrow reveal">配送員に向けた原付レンタル</span>
+      <h1 class="reveal">あなたの仕事を<br>止めません</h1>
+      <ul class="hero-points reveal">
+        <li><b>無制限プラン20,000円</b><br>— 気にせず乗り放題</li>
+        <li><b>修理・点検が無料</b><br>— 自社持ち込みで全て対応</li>
+        <li><b>故障時、最短当日交換</b><br>— 365日営業、土日でも交換に伺います</li>
+      </ul>
+      <p class="hero-close reveal">あなたの仕事を止めない、サポートをします。</p>
+      <div class="cta-row reveal">
+        <a class="btn-line" href="https://line.me/R/ti/p/@273smptm" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.9 3 3 6.3 3 10.3c0 3.6 3.2 6.6 7.5 7.2.3 0 .7.2.8.4.1.2.1.5 0 .7l-.2 1c-.1.4.3.9.8.6 1.9-.9 6.1-3.6 7.8-6.1 1-1.2 1.5-2.5 1.5-3.8C21 6.3 17.1 3 12 3Z"/></svg>LINEで予約する</a>
+        <a class="btn-plan" href="#plan">土日デリバリー・通勤通学プランはこちら！<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+      </div>
+      <p class="cta-note reveal">友だち追加だけ・最短即日で利用開始（在庫状況により当日対応できない場合があります）</p>
+      <p class="hero-other reveal">通勤・通学、お試しドライバー、副業デリバリーの方向けなど、その他プランも様々ご用意しています。</p>
+      <p class="micro reveal">池袋発・関東圏対応　｜　登録は<b>3ステップ</b>（LINE → 免許証送付・電子契約 → 利用開始）</p>
+    </div>
+  </div>
+</header>
+
+<div class="tagband" id="tagband">
+  <p><span class="tp">はじめ<span class="t-b">やすい</span>。</span><span class="dot d-b"></span><span class="tp">続け<span class="t-b">やすい</span>。</span><span class="dot d-r"></span><span class="tp">止まら<span class="t-r">ない</span>。</span></p>
+</div>
+
+<!-- ① プラン -->
+<section class="section" id="plan">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">料金プラン</span>
+      <h2>走り方に合わせて<br>選べる4プラン。</h2>
+      <p>毎日配達する方から、土日だけの副業、通勤・通学まで。あなたの走り方にぴったりの料金を。<br><span class="hl" style="white-space:nowrap">レンタル当日のお支払いはありません。</span></p>
+    </div>
+    <div class="plan-hero reveal">
+      <div class="plan-hero__left">
+        <div class="plan-hero__badges"><span class="ph-pop">人気No.1</span><span class="ph-use">毎日配達する方に</span></div>
+        <div class="plan-hero__name">無制限プラン</div>
+        <div class="plan-hero__price"><b>20,000</b><span>円 / 月</span></div>
+      </div>
+      <div class="plan-hero__right">
+        <p class="plan-hero__desc"><span class="hlw">走行距離無制限・乗り放題</span>。<br><span style="white-space:nowrap">何km走っても</span><span class="hlw">追加料金0円</span>。<br>毎日走る方に、迷ったらこれ。</p>
+        <a class="plan-hero__btn" href="https://line.me/R/ti/p/@273smptm" target="_blank" rel="noopener">このプランで予約する</a>
+      </div>
+    </div>
+    <div class="plans-3">
+      <div class="plan reveal">
+        <span class="plan__use">急な日だけ</span>
+        <div class="plan__name">日割り</div>
+        <div class="plan__price"><b>2,500</b><span>円 / 日</span></div>
+        <p class="plan__desc">急な短距離移動に。事前登録の無人貸し借り。距離制限なし。</p>
+        <a class="plan__btn" href="https://line.me/R/ti/p/@273smptm" target="_blank" rel="noopener">このプランで予約</a>
+      </div>
+      <div class="plan reveal">
+        <span class="plan__use">通勤・通学</span>
+        <div class="plan__name">ライト</div>
+        <div class="plan__price"><b>11,000</b><span>円 / 月</span></div>
+        <p class="plan__desc">走行距離300km未満の方に。超過分は1km=10円。土日デリバリーにも。</p>
+        <a class="plan__btn" href="https://line.me/R/ti/p/@273smptm" target="_blank" rel="noopener">このプランで予約</a>
+      </div>
+      <div class="plan reveal">
+        <span class="plan__use">土日デリバリー</span>
+        <div class="plan__name">スタンダード</div>
+        <div class="plan__price"><b>16,000</b><span>円 / 月</span></div>
+        <p class="plan__desc">1日中あちこち走る方に。1,000km超過後は1km=10円で追加可。おすすめプラン。</p>
+        <a class="plan__btn" href="https://line.me/R/ti/p/@273smptm" target="_blank" rel="noopener">このプランで予約</a>
+      </div>
+    </div>
+    <p class="plan-note reveal">※ プラン変更は毎月10日〜25日にLINEで受付。<br>お支払いは毎月10日固定。<br><span class="hl">レンタル当日のお支払いは不要です。</span><br>お支払い方法はクレジットカード・PayPay・銀行振込。</p>
+
+    <div class="opts reveal">
+      <div class="opt"><h3>ヘルメット</h3><div class="price">無料<small> 貸し出し</small></div></div>
+      <div class="opt"><h3>スマホホルダー</h3><div class="price">1,100<small>円</small></div></div>
+      <div class="opt"><h3>デリバリーボックス</h3><div class="price">2,200<small>円（42L）</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ② 強み・保証 -->
+<section class="section" id="strengths" style="background:var(--tint)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">強み・保証</span>
+      <h2>止まらない毎日を。</h2>
+      <p>バイクが止まれば、収入も止まる。だから50ccステーションは「走り続けられること」に徹底的にこだわります。</p>
+    </div>
+
+    <!-- 走行距離別保証 -->
+    <div class="subblock reveal">
+      <h3>走行距離別の保証制度</h3>
+      <p class="lead">走行距離に応じて、修理費用の負担割合が決まります。安心して走り続けられる仕組みです。</p>
+      <div class="card" style="overflow:hidden">
+        <table class="warranty">
+          <thead><tr><th>走行距離</th><th>負担割合</th></tr></thead>
+          <tbody>
+            <tr><td>0〜300km</td><td>弊社全額負担（レッカー込み）</td></tr>
+            <tr><td>300〜1,000km</td><td>弊社80% / お客様20%</td></tr>
+            <tr><td>1,000〜2,000km</td><td>弊社60% / お客様40%</td></tr>
+            <tr><td>2,000〜3,000km</td><td>弊社40% / お客様60%</td></tr>
+            <tr><td>3,000km〜</td><td>お客様負担</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="warranty-note">※ 代車兼レッカー = 往復距離 × 300円</p>
+      <div class="card reset-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg></div>
+        <div>
+          <h4>保証リセット制度</h4>
+          <p>安全点検（要予約・30分）を受けると、保証が0kmから再スタートします。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="strengths">
+      <div class="strength reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>月額20,000円で乗り放題</h3>
+        <p>他社にはない無制限プラン。オイル交換・点検もすべて無料で、毎日走るほどおトクです。</p>
+      </div>
+      <div class="strength reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6l-6 6 2 2 6-6a4 4 0 0 0 5.6-5.6l-2.4 2.4-2-2 2.4-2.4Z"/></svg></div>
+        <h3>消耗品の修理費が0円<span style="font-size:.8rem;color:var(--ink-soft);font-weight:600">（自社持ち込み）</span></h3>
+        <p>自社持ち込みならもちろん無料。弊社にご相談の上、バイク屋への持ち込みでもお客様のご負担は一部のみ！</p>
+      </div>
+      <div class="strength reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div>
+        <h3>365日・最短当日の車両交換</h3>
+        <p>トラブルで止まっても大丈夫。代わりの車両を最短当日、長くても2〜3日以内にお届けします。</p>
+      </div>
+      <div class="strength reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg></div>
+        <h3>当日の支払いなし</h3>
+        <p>お支払いは毎月10日固定。レンタル当日の支払いはなく、すぐに乗り始められます。</p>
+      </div>
+    </div>
+
+    <!-- 保険（法務確定文言・変更禁止） -->
+    <div class="subblock reveal">
+      <h3>任意保険オプション（2プラン）</h3>
+      <p class="lead">安心してご利用いただくための、任意保険オプションをご用意しています。</p>
+      <div class="ins-grid">
+        <div class="ins">
+          <h4>任意保険オプション</h4>
+          <div class="plan-sub">ベーシックプラン</div>
+          <div class="price">1,100<small>円/月</small></div>
+          <ul>
+            <li>対人・対物無制限</li>
+            <li>免責額20万円</li>
+            <li class="no">盗難補償：なし</li>
+            <li class="no">軽微損害（傷・ミラー破損等）：なし</li>
+          </ul>
+          <p class="fine">※「任意保険オプション（ベーシック）」は、当社（株式会社ゼロワン）が保険会社と契約しているフリート任意保険の適用を、月額1,100円のオプション料でお受けいただけるプランです。</p>
+        </div>
+        <div class="ins is-rec">
+          <span class="ins__rec">★ おすすめ</span>
+          <h4>パーフェクト補償</h4>
+          <div class="plan-sub">プレミアムプラン</div>
+          <div class="price">2,200<small>円/月</small></div>
+          <ul>
+            <li><b>免責額補償</b>：免責20万円のうち15万円を当社が補償（実質お客様負担5万円）</li>
+            <li><b>盗難補償</b>：GPS情報を共有のうえ、被害届が受理された場合は盗難にかかる費用負担なし</li>
+            <li><b>軽微損害の補償</b>：多少の傷・ミラー破損などは修理費の請求なし</li>
+          </ul>
+          <p class="fine">※「パーフェクト補償」は、ベーシック任意保険オプション（フリート任意保険の適用）に加入の上で、当社（株式会社ゼロワン）独自の追加補償サービス（免責額補償・盗難補償・軽微損害の補償）をお受けいただけるプランです。</p>
+        </div>
+      </div>
+      <div class="liability">
+        <b>事故時のお客様ご負担について（任意保険オプション・パーフェクト補償 共通）</b>
+        <p>※過失割合9割以上の事故（自損転倒・停止車両への追突など）の場合、以下の費用は全額お客様ご負担となります：</p>
+        <ul>
+          <li>自社車両の修理費用</li>
+          <li>相手車両・物への損害賠償額（対物賠償）</li>
+          <li>対人賠償のうち自賠責保険の補償範囲を超える額（任意保険でカバーされる部分）</li>
+        </ul>
+        <p>※対人賠償のうち自賠責保険の補償範囲については、過失割合に関わらず保険から支払われます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ③ 利用の流れ -->
+<section class="section" id="flow">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">利用の流れ</span>
+      <h2>LINEひとつで、3ステップ。</h2>
+      <p>面倒な手続きは一切ありません。来店不要で、最短即日から走り出せます。</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step__no"></div>
+        <h3>公式LINEを友だち追加</h3>
+        <p>ご案内・受け渡しの説明はすべてLINEで届きます。まずは友だち追加から。</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__no"></div>
+        <h3>免許証の送付と電子契約</h3>
+        <p>免許証（裏表）の写真を送って、電子契約書にサイン。来店は不要です。</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__no"></div>
+        <h3>利用開始</h3>
+        <p>基本は24時間対応の無人受け渡し（キーBOX）。初めての方や自信のない方は、有人での対応も可能です。</p>
+      </div>
+    </div>
+    <p class="steps-note reveal">※ お支払いは、クレジットカード・PayPay・銀行振込をご利用いただけます。</p>
+  </div>
+</section>
+
+<!-- ④ 受け渡し場所 -->
+<section class="section" id="access" style="background:var(--tint)">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-left:auto;margin-right:auto;text-align:center">
+      <span class="eyebrow">受け渡し場所</span>
+      <h2>受け取りは、この場所で。</h2>
+      <p>基本の受け渡し場所と、追加料金・連絡先のご案内です。</p>
+    </div>
+    <div class="locations reveal">
+      <div class="loc-basic">
+        <h3>基本受け渡し場所（追加料金なし）</h3>
+        <div class="addr">〒173-0036 東京都板橋区向原2-19-2</div>
+        <iframe title="基本受け渡し場所（東京都板橋区向原2-19-2）の地図" src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%90%91%E5%8E%9F2-19-2&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <div class="loc-grid">
+        <div>
+          <div class="loc-fees">
+            <div class="fee"><div class="place">池袋駅周辺</div><div class="add">+3,000円</div></div>
+            <div class="fee"><div class="place">新宿駅周辺</div><div class="add">+6,000円</div></div>
+            <div class="fee"><div class="place">その他の場所<small>基本住所から半径10km以内</small></div><div class="add">+10,000円</div></div>
+          </div>
+          <p class="fee-note">※ 受け渡し場所によっては追加料金が異なる場合がございます。<br>※ 交通状況により、お時間をいただく場合がございます。<br>※ 一部エリアではサービスをご提供できない場合がございます。</p>
+        </div>
+        <div class="contact-card">
+          <h3>お問い合わせ・アクセス</h3>
+          <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg><span>〒173-0036 東京都板橋区向原2-19-2</span></div>
+          <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>営業時間：いつでもご連絡ください</span></div>
+          <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><a href="tel:+81-50-1793-3872"><b>050-1793-3872</b></a></div>
+          <div class="line"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.9 3 3 6.3 3 10.3c0 3.6 3.2 6.6 7.5 7.2.3 0 .7.2.8.4.1.2.1.5 0 .7l-.2 1c-.1.4.3.9.8.6 1.9-.9 6.1-3.6 7.8-6.1 1-1.2 1.5-2.5 1.5-3.8C21 6.3 17.1 3 12 3Z"/></svg><a href="https://line.me/R/ti/p/@273smptm" target="_blank" rel="noopener"><b>LINEでお問い合わせ</b></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ よくある質問 -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-left:auto;margin-right:auto;text-align:center">
+      <span class="eyebrow">よくある質問</span>
+      <h2>困ったら、いつでもLINE。</h2>
+      <p>ご利用前の、よくあるご質問をまとめました。</p>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq"><summary><span class="q">Q.</span>バイクの車種は指定できますか？<span class="mk"></span></summary><div class="faq__body">車種のご指定はお断りさせていただいております。在庫車両からのお渡しとなりますが、同等性能の車両をご用意しますのでご安心ください。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>デリバリーボックスの大きさは？<span class="mk"></span></summary><div class="faq__body">42L型のものを使用しています。よくあるフードデリバリーバッグと同等の大きさで、バッグと違い肩が凝らないので長時間デリバリーの方におすすめです。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>取り扱い車種は？<span class="mk"></span></summary><div class="faq__body">２輪のスクータータイプを取り扱っています。ホンダ ディオ、ヤマハ ジョグ、スズキ レッツ４などを取り揃えております。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>125ccの取り扱いはありますか？<span class="mk"></span></summary><div class="faq__body">現在、125ccのお取り扱いはしておりません。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>お支払い日時はいつ・どんな方法？<span class="mk"></span></summary><div class="faq__body">毎月10日固定で、クレジットカード・PayPay・銀行振込からお選びいただけます。<br>・利用開始が10日より前 → 当月10日にお支払い<br>・利用開始が10日以降 → 翌月10日にお支払い<br>レンタル開始当日のお支払いは不要です。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>Uber Eats や出前館など配達業務でも使えますか？<span class="mk"></span></summary><div class="faq__body">はい、配送員業務を行う方のご利用が一番多いです。毎日走る方には「無制限プラン」、土日だけの副業ライダーには「ライト」や「スタンダードプラン」をおすすめしています。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>途中で延長したい場合は？<span class="mk"></span></summary><div class="faq__body">基本自動更新ですので、延長できなくなることはございません。返却日時が決まり次第、返却予定日の2日前までにご一報ください。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>プラン変更はできますか？<span class="mk"></span></summary><div class="faq__body">はい、毎月10日から25日までの間にLINEでご連絡いただければプラン変更が可能です。利用状況に応じて最適なプランへの切り替えをご相談ください。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>デリバリー車両登録に必要な書類は事前にもらえますか？<span class="mk"></span></summary><div class="faq__body">受け渡し当日まで車両は確定しないため、車両情報（ナンバー等）が必要な書類は受け渡し後のお渡しとなります。あらかじめご了承ください。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>利用に必要な免許は？年齢制限は？<span class="mk"></span></summary><div class="faq__body">原動機付自転車を運転できる有効な日本国の運転免許証（普通自動車免許でも可）が必要です。ご利用は満18歳以上が対象です。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>当日にすぐ借りられますか？<span class="mk"></span></summary><div class="faq__body">免許証の確認と電子契約書の手続き完了後、最短でご利用開始いただけます。在庫状況により当日対応できない場合もありますので、お急ぎの方は事前にLINEでご相談ください。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>受け渡しはどんな方法ですか？<span class="mk"></span></summary><div class="faq__body">基本は無人受け渡し（キーBOX方式）で24時間対応しています。原付に初めて乗る方や運転に自信がない方は、事前にご連絡いただければ有人での対応も可能です。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>屋根付きミニカー登録車両はありますか？<span class="mk"></span></summary><div class="faq__body">申し訳ございません、屋根付きミニカー登録車両のお取り扱いはございません。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>自分で保険に加入することは可能ですか？<span class="mk"></span></summary><div class="faq__body">はい、ご自身でお好きな任意保険にご加入いただくことも可能です。当社の任意保険オプション（ベーシック1,100円/月、パーフェクト補償2,200円/月）と併用または選択いただけます。</div></details>
+      <details class="faq"><summary><span class="q">Q.</span>「任意保険オプション」と「パーフェクト補償」の違いは何ですか？<span class="mk"></span></summary><div class="faq__body">両プランとも、当社が保険会社と契約しているフリート任意保険（対人・対物無制限／免責額20万円）が適用されます。パーフェクト補償は、これに加えて当社独自の追加補償（免責20万円のうち15万円を当社が補償し、実質のお客様負担は5万円／GPS情報を共有し被害届が受理された場合は盗難費用の負担なし／多少の傷・ミラー破損などの修理費の請求なし）が付いた上位プランです。</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ 運営者・ミッション -->
+<section class="section" id="about" style="background:var(--tint)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">運営者について</span>
+      <h2>都市の移動を、もっと自由に。</h2>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:8px">私たちのミッション</h3>
+        <p style="color:var(--ink-soft);font-size:.95rem;line-height:1.9">都市の移動をもっと自由に、もっと楽しく。50ccステーションは、ユーザーファーストなモビリティサービスを通じて、人々の生活の質を向上させることを目指しています。</p>
+        <div class="stats">
+          <div class="stat"><div class="lbl">年内目標 導入台数</div><div class="val">500台</div></div>
+          <div class="stat"><div class="lbl">年内目標 ユーザー数</div><div class="val">1,000人</div></div>
+          <div class="stat"><div class="lbl">対応エリア</div><div class="val">関東圏</div></div>
+          <div class="stat"><div class="lbl">LINEサポート</div><div class="val">24<span style="font-size:.9rem;color:var(--ink-soft)"> 時間</span></div></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="about-anim" style="margin-bottom:20px"><div id="scooterAnim" role="img" aria-label="スクーターのアニメーション"></div></div>
+        <div class="company">
+          <div class="row"><div class="lbl">会社名</div><div class="val">株式会社ゼロワン</div></div>
+          <div class="row"><div class="lbl">住所</div><div class="val">東京都板橋区向原2-19-2</div></div>
+          <div class="row"><div class="lbl">設立</div><div class="val">2025年1月</div></div>
+          <div class="row"><div class="lbl">事業内容</div><div class="val">レンタルバイク事業</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 最終CTA -->
+<section class="section final">
+  <div class="wrap">
+    <h2>今日から、走り出そう。</h2>
+    <p>質問だけでもOK。24時間、LINEで受け付けています。</p>
+    <a class="btn-line" href="https://line.me/R/ti/p/@273smptm" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.9 3 3 6.3 3 10.3c0 3.6 3.2 6.6 7.5 7.2.3 0 .7.2.8.4.1.2.1.5 0 .7l-.2 1c-.1.4.3.9.8.6 1.9-.9 6.1-3.6 7.8-6.1 1-1.2 1.5-2.5 1.5-3.8C21 6.3 17.1 3 12 3Z"/></svg>LINEで予約する</a>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p class="foot-tag"><span class="tp">はじめ<span class="t-b">やすい</span>。</span><span class="dot d-b"></span><span class="tp">続け<span class="t-b">やすい</span>。</span><span class="dot d-r"></span><span class="tp">止まら<span class="t-r">ない</span>。</span></p>
+    <div class="foot-grid">
+      <div class="col">
+        <h3>50ccステーション</h3>
+        <p>池袋発・関東圏対応の原付レンタル。<br>株式会社ゼロワン<br>代表取締役：千葉 拓<br>東京都板橋区向原2-19-2</p>
+      </div>
+      <div class="col">
+        <h3>メニュー</h3>
+        <a href="#plan">料金プラン</a>
+        <a href="#strengths">強み・保証</a>
+        <a href="#flow">利用の流れ</a>
+        <a href="#faq">よくある質問</a>
+      </div>
+      <div class="col">
+        <h3>お問い合わせ</h3>
+        <a href="https://line.me/R/ti/p/@273smptm" target="_blank" rel="noopener">LINEで予約・相談</a>
+        <a href="tel:+81-50-1793-3872">050-1793-3872</a>
+      </div>
+      <div class="col">
+        <h3>規約・ポリシー</h3>
+        <a href="legal.html">特定商取引法に基づく表記</a>
+        <a href="terms.html">利用規約</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+      </div>
+    </div>
+    <p class="copy">© 2026 株式会社ゼロワン　50ccステーション</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // reveal（スクロールで出現）。reduced-motion時は即表示してobserverを張らない
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(reduce || !('IntersectionObserver' in window)){
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+})();
+</script>
+<!--SCOOTER_DATA-->
+<script>
+(function(){
+  var loaded=false;
+  function loadScooter(){
+    if(loaded) return; loaded=true;
+    var el=document.getElementById('scooterAnim'); if(!el) return;
+    function render(data){ try{ if(window.lottie) lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,animationData:data}); }catch(e){} }
+    function go(){ var src=document.getElementById('scooter-data'); if(src){ try{ render(JSON.parse(src.textContent)); }catch(e){} return; } fetch('assets/scooter.json').then(function(r){return r.json();}).then(render).catch(function(){}); }
+    if(window.lottie){ go(); return; }
+    var sc=document.createElement('script'); sc.src='https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js'; sc.onload=go; document.body.appendChild(sc);
+  }
+  var about=document.getElementById('about');
+  if(!about || !('IntersectionObserver' in window)){ loadScooter(); return; }
+  var io=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ loadScooter(); io.disconnect(); } },{rootMargin:'400px'});
+  io.observe(about);
+})();
+</script>
+<div id="cookie" role="dialog" aria-live="polite" aria-label="Cookie同意" style="position:fixed;inset-inline:0;bottom:0;z-index:100;padding:12px;display:none">
+  <div style="max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--hair);border-radius:14px;box-shadow:0 14px 40px rgba(20,40,90,.18);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap">
+    <p style="flex:1;min-width:220px;font-size:.85rem;color:var(--ink-soft);margin:0;line-height:1.7"><b style="color:var(--ink);font-weight:700;display:block;margin-bottom:2px">Cookie のご利用について</b>当サイトでは、サービス品質の向上と広告効果測定のため Cookie を利用しています。詳細は<a href="privacy.html" style="color:var(--blue)">プライバシーポリシー</a>をご覧ください。</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button onclick="__cc(true)" style="border:0;cursor:pointer;font-weight:700;font-size:.82rem;padding:10px 16px;border-radius:9px;background:var(--blue);color:#fff">同意して続ける</button>
+      <button onclick="__cc(false)" style="border:1.5px solid var(--hair);cursor:pointer;font-weight:700;font-size:.82rem;padding:10px 16px;border-radius:9px;background:#fff;color:var(--ink-soft)">必須のみ使用</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var K='50cc_cookie_consent_v1';
+  function apply(g){ if(window.gtag){ try{ gtag('consent','update',{ad_storage:g?'granted':'denied',ad_user_data:g?'granted':'denied',ad_personalization:g?'granted':'denied',analytics_storage:g?'granted':'denied'}); }catch(e){} } }
+  window.__cc=function(g){ try{ localStorage.setItem(K,g?'granted':'denied'); }catch(e){} apply(g); var b=document.getElementById('cookie'); if(b) b.style.display='none'; };
+  var st=null; try{ st=localStorage.getItem(K); }catch(e){}
+  if(st==='granted'||st==='denied'){ apply(st==='granted'); } else { apply(false); var b=document.getElementById('cookie'); if(b) b.style.display='block'; }
+})();
+</script>
+</body>
+</html>
