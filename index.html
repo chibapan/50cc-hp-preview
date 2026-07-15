@@ -232,10 +232,10 @@
   @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 
   @media(max-width:640px){
-    .hero{align-items:flex-start;min-height:calc(88svh - 62px)}
-    .hero__photo{background-image:url("assets/hero-mobile.jpg");background-position:72% center}
-    .hero__scrim{background:linear-gradient(180deg, rgba(255,253,250,.95) 0%, rgba(255,253,250,.74) 44%, rgba(255,253,250,.42) 68%, rgba(255,253,250,.06) 100%)}
-    .hero__content{padding:30px 20px 36px}
+    .hero{display:block;min-height:auto}
+    .hero__photo{inset:auto 0 0 0;height:300px;background-image:url("assets/hero-mobile.jpg");background-position:70% 59%}
+    .hero__scrim{inset:auto 0 240px 0;height:60px;background:linear-gradient(180deg, var(--kinari) 0%, rgba(255,253,250,0) 100%)}
+    .hero__content{padding:26px 20px 316px}
     .hero-points{max-width:100%}
     .cta-note,.hero-other,.micro{display:none}
     .btn-line,.btn-plan{width:100%;justify-content:center}
@@ -329,9 +329,9 @@
 
 <div id="loader" aria-hidden="true">
   <div class="ll-wrap">
-    <img class="ll-base" src="assets/logo.png" alt="" width="230" height="119">
+    <img class="ll-base" src="assets/logo-t.svg" alt="" width="230" height="119">
     <div class="ll-cover"></div>
-    <img class="ll-hand" src="assets/hand.png" alt="">
+    <img class="ll-hand" src="assets/hand.svg" alt="">
   </div>
   <div class="loader-dots"><span></span><span></span><span></span></div>
 </div>
