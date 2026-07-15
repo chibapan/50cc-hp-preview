@@ -134,8 +134,8 @@
   .reset-card p{font-size:.9rem;color:var(--ink-soft)}
   .ins-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
   .ins{position:relative;background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:24px;box-shadow:var(--shadow-sm)}
-  .ins.is-rec{border:2px solid var(--blue)}
-  .ins__rec{position:absolute;top:-13px;right:20px;background:var(--blue);color:#fff;font-size:.74rem;font-weight:700;padding:4px 12px;border-radius:999px}
+  .ins.is-rec{border:2px solid var(--blue);box-shadow:var(--shadow)}
+  .ins__rec{position:absolute;top:-13px;right:20px;background:var(--red);color:#fff;font-size:.74rem;font-weight:700;padding:4px 12px;border-radius:999px}
   .ins h4{font-size:1.2rem;font-weight:700}
   .ins .plan-sub{font-size:.8rem;color:var(--ink-soft);font-weight:600;margin-bottom:12px}
   .ins .price{font-size:1.6rem;font-weight:700;color:var(--blue);margin-bottom:14px}
@@ -296,6 +296,13 @@
   @media(max-width:360px){
     table.warranty th,table.warranty td{font-size:.78rem;padding:11px 10px}
   }
+  /* プラン下のミニCTA */
+  .mini-cta{margin-top:38px;text-align:center}
+  .mini-cta p{font-size:1.02rem;font-weight:600;color:var(--ink);margin-bottom:16px}
+  /* FAQ もっと見る */
+  .faq-list.collapsed details:nth-of-type(n+6){display:none}
+  .faq-morebtn{display:block;margin:18px auto 0;padding:13px 32px;border:1.5px solid var(--blue);color:var(--blue);background:none;border-radius:10px;font-weight:600;font-size:.95rem;cursor:pointer;font-family:inherit;transition:.15s}
+  .faq-morebtn:hover{background:var(--blue);color:#fff}
 </style>
 
 <meta name="keywords" content="原付レンタル,原付 レンタル,原付バイク レンタル,バイクレンタル 池袋,原付 月額,原付 乗り放題,Uber Eats バイク,ウーバーイーツ 原付,出前館 バイク,デリバリー 原付,配達員 バイク レンタル,副業 ライダー 原付,50cc レンタル,東京 原付 レンタル,豊島区 バイクレンタル,原付 通勤">
@@ -422,6 +429,10 @@
       <div class="opt"><h3>スマホホルダー</h3><div class="price">1,100<small>円</small></div></div>
       <div class="opt"><h3>デリバリーボックス</h3><div class="price">2,200<small>円（42L）</small></div></div>
     </div>
+    <div class="mini-cta reveal">
+      <p>登録はLINEでかんたん。質問だけでもOKです。</p>
+      <a class="btn-line" href="https://line.me/R/ti/p/@273smptm" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.9 3 3 6.3 3 10.3c0 3.6 3.2 6.6 7.5 7.2.3 0 .7.2.8.4.1.2.1.5 0 .7l-.2 1c-.1.4.3.9.8.6 1.9-.9 6.1-3.6 7.8-6.1 1-1.2 1.5-2.5 1.5-3.8C21 6.3 17.1 3 12 3Z"/></svg>LINEで登録・予約する</a>
+    </div>
   </div>
 </section>
 
@@ -488,18 +499,6 @@
       <h3>任意保険オプション（2プラン）</h3>
       <p class="lead">安心してご利用いただくための、任意保険オプションをご用意しています。</p>
       <div class="ins-grid">
-        <div class="ins">
-          <h4>任意保険オプション</h4>
-          <div class="plan-sub">ベーシックプラン</div>
-          <div class="price">1,100<small>円/月</small></div>
-          <ul>
-            <li>対人・対物無制限</li>
-            <li>免責額20万円</li>
-            <li class="no">盗難補償：なし</li>
-            <li class="no">軽微損害（傷・ミラー破損等）：なし</li>
-          </ul>
-          <p class="fine">※「任意保険オプション（ベーシック）」は、当社（株式会社ゼロワン）が保険会社と契約しているフリート任意保険の適用を、月額1,100円のオプション料でお受けいただけるプランです。</p>
-        </div>
         <div class="ins is-rec">
           <span class="ins__rec">★ おすすめ</span>
           <h4>パーフェクト補償</h4>
@@ -511,6 +510,18 @@
             <li><b>軽微損害の補償</b>：多少の傷・ミラー破損などは修理費の請求なし</li>
           </ul>
           <p class="fine">※「パーフェクト補償」は、ベーシック任意保険オプション（フリート任意保険の適用）に加入の上で、当社（株式会社ゼロワン）独自の追加補償サービス（免責額補償・盗難補償・軽微損害の補償）をお受けいただけるプランです。</p>
+        </div>
+        <div class="ins">
+          <h4>任意保険オプション</h4>
+          <div class="plan-sub">ベーシックプラン</div>
+          <div class="price">1,100<small>円/月</small></div>
+          <ul>
+            <li>対人・対物無制限</li>
+            <li>免責額20万円</li>
+            <li class="no">盗難補償：なし</li>
+            <li class="no">軽微損害（傷・ミラー破損等）：なし</li>
+          </ul>
+          <p class="fine">※「任意保険オプション（ベーシック）」は、当社（株式会社ゼロワン）が保険会社と契約しているフリート任意保険の適用を、月額1,100円のオプション料でお受けいただけるプランです。</p>
         </div>
       </div>
       <div class="liability">
@@ -739,6 +750,19 @@
   window.__cc=function(g){ try{ localStorage.setItem(K,g?'granted':'denied'); }catch(e){} apply(g); var b=document.getElementById('cookie'); if(b) b.style.display='none'; };
   var st=null; try{ st=localStorage.getItem(K); }catch(e){}
   if(st==='granted'||st==='denied'){ apply(st==='granted'); } else { apply(false); var b=document.getElementById('cookie'); if(b) b.style.display='block'; }
+})();
+</script>
+<script>
+(function(){
+  var list=document.querySelector('.faq-list'); if(!list) return;
+  var items=list.querySelectorAll('details.faq');
+  if(items.length<=5) return;
+  list.classList.add('collapsed');
+  var b=document.createElement('button');
+  b.type='button'; b.className='faq-morebtn';
+  b.textContent='もっと見る（残り'+(items.length-5)+'件）';
+  b.addEventListener('click',function(){ list.classList.remove('collapsed'); b.remove(); });
+  list.parentNode.insertBefore(b, list.nextSibling);
 })();
 </script>
 </body>
